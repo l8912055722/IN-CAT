@@ -1,0 +1,71 @@
+.note{
+    border-bottom: 5px solid $secondaryDark;
+    h1{
+        font-weight: bold;
+    }
+}
+.who h3, .who h4 ,.ability h3{
+    text-align: center;
+    writing-mode: vertical-rl;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+.ability h4{
+    font-weight: bold;
+}
+.content hr{
+    width: 100%;
+    border-top: 5px solid $secondaryDark;
+}
+.circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 99px;
+}
+.founded p{
+    font-size: 1.25rem;
+}
+.time li{
+    padding-right: 285px;
+    position: relative;
+    &::after{
+			content: "";
+			position: absolute;
+			top: 0px;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+    }
+    &:nth-child(2)::after{
+        background-color: #FF7171;
+    }
+    &:nth-child(3)::after{
+        background-color: #73FF71;
+    }
+    &:nth-child(4)::after{
+        background-color: #71FFFF;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #000000;
+    }
+}
+.develop p{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+@include pad(){
+    .time li{
+        padding-right: 175px;
+    }
+    .develop p{
+        font-size: 1rem;
+    }
+}

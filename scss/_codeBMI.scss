@@ -1,0 +1,17 @@
+.BMI{
+    margin-top: 100px;
+    hr{
+        border-top: 1px solid $secondaryDark;
+    }
+}
+.original{
+    background-color: $secondaryDark;
+    color: white;
+    border-radius: 0px 99px 99px 0px;
+    a{
+        color: white;
+        &:hover{
+            color: $primary;
+        }
+    }
+}

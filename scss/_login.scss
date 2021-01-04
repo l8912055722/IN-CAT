@@ -1,0 +1,19 @@
+.login-title{
+    border-bottom: 1px solid $secondaryDark;
+}
+.signOut:hover{
+    background-color: $primary !important;
+    border-color: $primary !important;
+}
+.login{
+    a{
+        color: $primary;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+}
+.login-title{
+    clip-path: inset(0 0 0 0);
+}
